@@ -27,3 +27,8 @@ dl dt{font-weight:700;margin-top:16px;color:#fff}dl dd{margin:2px 0 0;color:var(
 .grid .card h3{margin:0 0 6px;font-size:16px;color:var(--cyan)}.grid .card p{margin:0;font-size:14px}
 footer{margin-top:56px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:20px;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between}
 ul{padding-left:20px}
+nav.top .in{align-items:center}
+.lang{margin-left:auto;display:flex;gap:6px}
+.lang a{font-size:12px;padding:3px 8px;border:1px solid rgba(255,255,255,.35);border-radius:999px;color:#fff;text-shadow:none;background:rgba(0,0,0,.35)}
+.lang a.on{background:var(--yellow);color:#1a1420;border-color:var(--yellow)}
+.lang a:hover{text-decoration:none}
