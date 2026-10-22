@@ -42,10 +42,11 @@ var ITEMS = {
 };
 (function(){
   var L = {
-    ko:{th:["항목","등급","확률(%)","비고"], total:"합계", upd:function(y,m,d){return "최종 갱신: "+y+"년 "+m+"월 "+d+"일";}},
-    en:{th:["Item","Tier","Rate (%)","Notes"], total:"Total", upd:function(y,m,d){return "Last updated: "+["January","February","March","April","May","June","July","August","September","October","November","December"][m-1]+" "+d+", "+y;}},
-    ja:{th:["項目","ティア","確率(%)","備考"], total:"合計", upd:function(y,m,d){return "最終更新："+y+"年"+m+"月"+d+"日";}}
+    ko:{th:["항목","등급","확률","비고"], total:"합계", upd:function(y,m,d){return "최종 갱신: "+y+"년 "+m+"월 "+d+"일";}},
+    en:{th:["Item","Tier","Rate","Notes"], total:"Total", upd:function(y,m,d){return "Last updated: "+["January","February","March","April","May","June","July","August","September","October","November","December"][m-1]+" "+d+", "+y;}},
+    ja:{th:["項目","ティア","確率","備考"], total:"合計", upd:function(y,m,d){return "最終更新："+y+"年"+m+"月"+d+"日";}}
   };
+  function fmt(n){return (Math.round(n*100)/100)+"%";}
   function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
   var p = ODDS.updated.split("-").map(Number), out = "";
   ["en","ko","ja"].forEach(function(l){
@@ -55,9 +56,9 @@ var ITEMS = {
       h += '<h2>'+esc(pool.name[l])+'</h2><div class="tbl"><table class="odds"><thead><tr>'+t.th.map(function(x){return '<th>'+x+'</th>';}).join("")+'</tr></thead><tbody>';
       pool.rows.forEach(function(r){
         var it = ITEMS[r[0]] ? ITEMS[r[0]][l] : [r[0], ""]; sum += r[1];
-        h += '<tr><td>'+esc(it[0])+'</td><td>'+esc(it[1])+'</td><td class="num">'+r[1].toFixed(2)+'</td><td>'+esc(r[2]||"")+'</td></tr>';
+        h += '<tr><td>'+esc(it[0])+'</td><td>'+esc(it[1])+'</td><td class="num">'+fmt(r[1])+'</td><td>'+esc(r[2]||"")+'</td></tr>';
       });
-      h += '</tbody><tfoot><tr><td colspan="4" class="num">'+t.total+' '+(Math.round(sum*100)/100).toFixed(2)+'%</td></tr></tfoot></table></div>';
+      h += '</tbody><tfoot><tr><td colspan="4" class="num">'+t.total+' '+fmt(sum)+'</td></tr></tfoot></table></div>';
     });
     out += h + '</div>';
   });
