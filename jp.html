@@ -23,14 +23,4 @@
 <p class="small" id="note"></p>
 <div class="key"><img src="img/characters.webp" alt="DTT guardians" style="background:linear-gradient(180deg,#6a74ff,#3a44c9);padding:24px"></div>
 <footer><span>© 2026 LOEND · <a href="https://loendgame.com">loendgame.com</a></span><span><a href="support.html">Support</a> · <a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a></span></footer></div>
-<script>
-(function(){
-var ua=navigator.userAgent||'';
-var ios=/iPhone|iPad|iPod/.test(ua)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
-var q=new URLSearchParams(location.search);
-if(!ios||q.get('stay')==='1')return;
-document.addEventListener('DOMContentLoaded',function(){document.getElementById('note').textContent='App Storeへ移動します…';});
-setTimeout(function(){location.replace(document.getElementById('ios').href);},800);
-})();
-</script>
 </body></html>
