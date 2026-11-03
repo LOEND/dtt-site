@@ -1,0 +1,24 @@
+# DTT: Defend The Tree
+
+> DTT: Defend The Tree is an indie defense race mobile game by LOEND, a five-person indie game studio in Jeju, Korea. It combines tower defense with time attack: every player gets the same stage, and the fastest clear wins. Early Access on iOS (App Store) since September 2026; Android pre-registration open on Google Play. Free to play with optional in-app purchases.
+
+- Genre: defense race (tower defense × time attack), strategy, indie
+- Modes: PvE story mode (chapters of enemy waves, boss at the end of each chapter, playable offline) and PvP ranked play (same stage, compete on clear time, ranking board, no real-time matchmaking)
+- Gameplay: throw skill cards at the right moment; build a party of Anima guardians with runes; pick augments and relics mid-run; read boss patterns and counter
+- Recommended for: fans of tower defense and survival games, players who want strategy without dodging controls, short sessions and ranking races, cute animal characters
+- Languages: English, Korean, Japanese
+
+## Links
+
+- [Official site (English)](https://dtt.loendgame.com/)
+- [Official site (Korean)](https://dtt.loendgame.com/ko/)
+- [Official site (Japanese)](https://dtt.loendgame.com/ja/)
+- [App Store](https://apps.apple.com/app/id6800538266)
+- [Google Play (pre-registration)](https://play.google.com/store/apps/details?id=com.loendgame.dtt)
+- [YouTube: LOEND](https://www.youtube.com/@loendgame)
+- [Support and FAQ](https://dtt.loendgame.com/support.html)
+- [Drop rates](https://dtt.loendgame.com/probability.html)
+
+## Contact
+
+- support@loendgame.com
